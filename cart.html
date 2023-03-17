@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha | Elegant bracelet store</title>
+    <link rel="icon" href="./assets/vecteezy_luxury-gold-leaf-frame-border-floral-ornament-for_20046118_28.png" type="image/png">
+</head>
+<body style="margin: 0;">
+    <center>
+        <header>
+            <a href="index.html">
+                <!-- Image source: https://www.vecteezy.com/png/20046118-luxury-gold-leaf-frame-border-floral-ornament-for-background-wedding-invitation-thank-you-card-logo-greeting-card -->
+                <img src="./assets/vecteezy_luxury-gold-leaf-frame-border-floral-ornament-for_20046118_28.png" width="40" alt="Minhha-Store-logo">
+            </a>
+            <span style="font-size: 30px; text-decoration: none;">Minha Store</span>
+            <nav style="background-color: #EDC967; padding: 16px; font-size: 20px;">
+                <a href="index.html" style="text-decoration: none;">
+                    <strong> Home </strong>
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="ourProduct.html" style="text-decoration: none;">
+                    <strong> Our product </strong>
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="cart.html" style="text-decoration: none;">
+                    <strong> Cart </strong>
+                </a>
+            </nav>
+        </header>
+
+        <br><br><br><br><br>
+        <section>
+            <h1>Product Order Form</h1>
+            <center>
+                <form action="form-processing" method="post" target="_blank">
+                    <fieldset style="width: 700px; padding: 18px; background-image: url(./assets/vecteezy_gold-leaf-watercolor_10883349_979.png);background-size: cover;">
+                        <!-- Background image source: https://www.vecteezy.com/png/10883349-gold-leaf-watercolor -->
+                        <fieldset style="width:400px; background-color: #F7F7F7;">
+                            <legend> <h3>Your Personal Information: </h3></legend>
+                                <label for="first-name"> First name: </label>
+                                <input type="text" id="first-name" name="first-name" required>
+
+                                <br><br>
+                                <label for="last-name"> Last name: </label>
+                                <input type="text" id="last-name" name="last-name" required>
+
+                                <br><br>
+                                <label for="phone-num"> Phone number: </label>
+                                <input type="text" id="phone-num" name="phone-num" required placeholder="0987654321">
+                                        
+                                <br><br>
+                                <label for="email"> Email address: </label>
+                                <input type="email" id="email" name="email" placeholder="my_name@email.com">
+                        </fieldset>
+
+                        <br><br>
+                        <fieldset style="width:400px; background-color: #F7F7F7;">
+                            <legend> <h3> Shipping address:</h3></legend>
+                                <!-- Specify id so that <label> works, use name="ship-address" so that radio works-->
+                                <input type="radio" name="ship-address" id="HCM-city" value="HCM-city" checked>
+                                <label for="HCM-city"> Ho Chi Minh City, Vietnam </label>
+                                <br><br>
+                                <input type="radio" name="ship-address" id="other-VN-city" value="other-VN-city"> 
+                                <label for="other-VN-city"> Other cities in Vietnam: </label>
+                                <input type="text" name="ship-address" placeholder="Address, District, City">
+                                <br><br>
+                                <input type="radio" name="ship-address" id="international" value="international">
+                                <label for="international"> International: </label>
+                                <input type="text" name="ship-address" placeholder="Country, Address">
+                        </fieldset>
+
+                        <br><br><br>
+                        <label for="select-product"> Select product(s): </label>
+                        <select name="select-product" id="select-product">
+                            <optgroup label="Yellow gold">
+                                <option value="Bois-de-Rose-Bracelet">Bois de Rose Bracelet</option>
+                                <option value="Rose-des-Vents-Bracelet">Rose des Vents Bracelet</option>
+                                <option value="Rose-Céleste-Bracelet">Rose Céleste Bracelet</option>
+                            </optgroup>
+                            <optgroup label="White gold">                                    
+                                <option value="Rose-des-Vents-Cuff-Bracelet">Rose des Vents Cuff Bracelet</option>
+                                <option value="Couture-Bracelet">Couture Bracelet</option>
+                                <option value="Rose-Bagatelle-Bracelet">Rose Bagatelle Bracelet</option>
+                            </optgroup>
+                            <optgroup label="Rose gold">
+                                <option value="Mimirose-Bracelet">Mimirose Bracelet</option>
+                                <option value="Gem-Bracelet">Gem Bracelet</option>
+                                <option value="Bois-de-Rose-Bracelet">Bois de Rose Bracelet</option>
+                            </optgroup>                            
+                        </select>
+
+                        <br><br>
+                        <input type="checkbox" id="gift-wrapping" name="gift-wrapping">
+                        <label for="gift-wrapping"> Do you want your product to be wrapped as a gift? </label>
+
+                        <br><br><br><br><br>
+                        <label for="seller-note">Note to seller:</label><br>
+                        <textarea id="seller-note" name="seller-note" rows="4" cols="40"></textarea>
+
+                        <br><br>                            
+                        <label for="delivery-note">Note to delivery:</label><br>
+                        <textarea id="delivery-note" name="delivery-note" rows="4" cols="40"></textarea>
+                        <br><br><br>
+                        <button type="submit" style="background-color: #EDC967; padding: 10px 32px; border-radius: 10px;">Order Now</button>
+                    </fieldset>
+                </form>
+            </center>
+        </section>
+
+        <br><br><br><br><br><br><br>
+        <section>
+            <h2> Our store</h2>
+            <!-- Embed a google map to show store location -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0716553410184!2d106.69357801466035!3d10.728956763002245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2sRMIT%20University%20Vietnam%20-%20Saigon%20South%20campus!5e0!3m2!1sen!2s!4v1678990263788!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br><br>
+            <h2>Contact us:</h2>
+            <p>Email: s3978681@rmit.edu.vn</p>
+            <p>Phone: 012345678</p>
+        </section>
+    </center>
+
+</body>
+
+<br><br><br><br>
+<footer style="background-color:#EDC967; padding: 16px;text-align: center;">
+    <span>
+            &copy; Copyright 2023 by <strong>Vu Minh Ha</strong> @ RMIT Vietnam
+    </span>
+</footer>
+</html>
